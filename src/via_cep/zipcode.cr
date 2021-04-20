@@ -13,6 +13,13 @@ module ViaCep
 
     def initialize(zipcode : String)
       @zipcode = zipcode
+      call
+
+      self
+    end
+
+    def address
+      "#{street}, #{neighborhood}, #{city}, #{state} - #{zipcode}"
     end
 
     def valid?

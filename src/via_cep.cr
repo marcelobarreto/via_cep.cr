@@ -1,7 +1,7 @@
 require "http/client"
 require "json"
 
-require "./via_cep/zipcode"
+require "./via_cep/*"
 
 # TODO: Write documentation for `ViaCep`
 module ViaCep
